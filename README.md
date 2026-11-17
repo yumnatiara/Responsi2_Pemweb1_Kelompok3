@@ -4,8 +4,8 @@ Sebuah platform berbasis web untuk mencatat serta memantau sirkulasi barang yang
 
 ## Anggota Kelompok
 1. Varel Hapita Salma H1D025031 (Database, Autentikasi serta Data Master)
-2. Rizky Satya Firmansyah H1D025044 (DIISI YA)
-3. Yumna Tiara Afif H1D0250129 (DIISI YA)
+2. Rizky Satya Firmansyah H1D025044 (Dashboard, Tracker Tenggat, Pengembalian & UI Global)
+3. Yumna Tiara Afif H1D0250129 (Katalog Aset & Pencatatan Sirkulasi Pinjaman)
 
 ---
 
