@@ -10,9 +10,9 @@ Sebuah platform berbasis web untuk mencatat serta memantau sirkulasi barang yang
 ---
 
 ## Latar Belakang
-Dalam lingkungan di sekitar kampus, kebutuhan akan berbagi sumber daya akan semakin bertambah seiringnya waktu. Mulai dari kebutuhan anak kos, fasilitas dan perlengkapan pendukung yang ada di kampus, serta perlengkapan acara organisasi, adanya ketersediaan dan kemudahan akses terhadap sarana prasarana ini menjadi salah satu faktor penting dalam mendukung produktivitas. Tidak selamanya dari kita memiliki barang tersebut, sehingga sudah tidak asing dalam kegiatan pinjam meminjam di area kampus ini. Tetapi, sayangnya mayoritas masih dilakukan secara informal dan lisan tanpa adanya pencatatan formal. Praktik ini kerap memicu berbagai persoalan, seperti barang hilang tanpa kejelasan, keterlambatan pengembalian karena hilangnya jejak tenggat waktu, serta perselisihan akibat kerusakan barang yang tidak terdokumentasi kondisi awalnya.
+Dalam lingkungan di sekitar kampus, kebutuhan untuk saling meminjam barang sangatlah tinggi seiringnya waktu. Mulai dari kebutuhan anak kos, fasilitas dan perlengkapan pendukung yang ada di kampus, serta perlengkapan acara organisasi. Tetapi, sayangnya mayoritas masih dilakukan secara informal dan lisan tanpa adanya pencatatan yang jelas. Akibatnya sering memicu berbagai persoalan, seperti barang hilang tanpa kejelasan,lupa dikembalikan karena melewati tenggat waktu, serta memicu perselisihan akibat kerusakan barang yang kondisi awalnya tidak tercatat.
 
-Berdasarkan permasalahan tersebut, optimalisasi pemanfaatan aset bersama melalui sistem pencatatan yang transparan menjadi langkah krusial, sehingga solusi dari kami adalah dengan meluncurkan proyek bernama **AssetTrack** sebagai platform berbasis web. Yang memilki tujuan untuk:
-- Sistem pencatatan identitas peminjam dan tenggat waktu pengembalian secara lebih terstruktur.
+Berdasarkan permasalahan tersebut, dalam mengatasinya ini dari kami pun merancang suatu proyek bernama **AssetTrack** sebagai platform berbasis web untuk mempermudah pengelolaan serta pencatatan barang peminjaman. Yang memiliki tujuan untuk:
+- Mencatat data identitas peminjam dan tenggat waktu pengembalian secara lebih terstruktur.
 - Pemantauan kondisi barang sebelum dipinjam dan sesudah dikembalikan.
 - Mendukung pencapaian SDG 12 (Responsible Consumption and Production) dengan mendorong budaya pinjam-pakai aset bersama di kalangan mahasiswa.
