@@ -2,7 +2,7 @@
 session_start();
 include 'koneksi.php';
 
-if (isset($_SESSION['id_user'])) {
+if (isset($_SESSION['id_pengguna'])) {
     header("Location: index.php");
     exit;
 }
@@ -12,13 +12,13 @@ if (isset($_POST['register'])) {
     $password     = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $nama_lengkap = mysqli_real_escape_string($koneksi, $_POST['nama_lengkap']);
     $nim          = mysqli_real_escape_string($koneksi, $_POST['nim']);
-    $no_wa        = mysqli_real_escape_string($koneksi, $_POST['no_telepon']);
+    $no_telepon   = mysqli_real_escape_string($koneksi, $_POST['no_telepon']);
     $alamat       = mysqli_real_escape_string($koneksi, $_POST['alamat']);
 
     // Cek apakah username sudah dipakai
     $cek_user = mysqli_query($koneksi, "SELECT username FROM pengguna WHERE username = '$username'");
     if (mysqli_num_rows($cek_user) > 0) {
-        $error = "Sayangnya sername sudah terdaftar, silakan gunakan username lain ya!";
+        $error = "Sayangnya username sudah terdaftar, silakan gunakan username lain ya!";
     } else {
         $query = "INSERT INTO pengguna (username, password, nama_lengkap, nim, no_telepon, alamat) 
                   VALUES ('$username', '$password', '$nama_lengkap', '$nim', '$no_telepon', '$alamat')";
@@ -32,14 +32,15 @@ if (isset($_POST['register'])) {
     }
 }
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Akun AssetTrack</title>
     <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <main>
         <h2>Registrasi Akun</h2>
         <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
@@ -49,7 +50,7 @@ if (isset($_POST['register'])) {
             <input type="text" name="nama_lengkap" required><br><br>
 
             <label>NIM</label><br>
-            <input type="text" name="nim" placeholder="Contoh: H1D022001" required><br><br>
+            <input type="text" name="nim" placeholder="Contoh: H1D025001" required><br><br>
 
             <label>Nomor Telepon Aktif</label><br>
             <input type="text" name="no_telepon" placeholder="Contoh: 081234567890" required><br><br>

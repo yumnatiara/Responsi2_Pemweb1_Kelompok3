@@ -2,7 +2,7 @@
 session_start();
 include 'koneksi.php';
 
-if (isset($_SESSION['id_user'])) {
+if (isset($_SESSION['id_pengguna'])) {
     header("Location: index.php");
     exit;
 }
@@ -14,7 +14,6 @@ if (isset($_POST['login'])) {
     $query = mysqli_query($koneksi, "SELECT * FROM pengguna WHERE username = '$username'");
     $data = mysqli_fetch_assoc($query);
 
-    // Pencocokan password (bisa pakai password_verify jika di register pakai password_hash)
     if ($data && password_verify($password, $data['password'])) {
         $_SESSION['id_pengguna'] = $data['id_pengguna'];
         $_SESSION['nama_lengkap'] = $data['nama_lengkap'];
@@ -25,9 +24,8 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
