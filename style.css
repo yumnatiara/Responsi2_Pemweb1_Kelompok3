@@ -6,12 +6,12 @@
     --secondary: #21358C;
     --soft-blue: #D7E4FC;
     --tint-blue: #EEF3FE;
-    --amber: #F59E0B;
-    --amber-dark: #D97706;
-    --blue-accent: #3B82F6;
-    --green-accent: #10B981;
-    --red-bg: #FEE2E2;
-    --red-text: #DC2626;
+    --pastel-purple: #8E7DF8;
+    --pastel-pink: #E664B5;
+    --pastel-gold: #EAB338;
+    --pastel-mint: #5EC295;
+    --pastel-red-bg: #FCE7F3;
+    --pastel-red-text: #D9468F;
     --text-dark: #111111;
     --text-gray: #6A7082;
     --text-muted: #A9B2C8;
@@ -35,7 +35,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* navbar */
 header {
     background: var(--white) !important;
     padding: 0.5rem 2.5rem !important;
@@ -87,18 +87,17 @@ header nav a::after {
 header nav a:hover, header nav a.active { color: var(--primary) !important; font-weight: 600; }
 header nav a:hover::after, header nav a.active::after { width: 100%; }
 
-/* Tombol logout */
 header nav a[href*="logout"] {
-    background: var(--red-bg) !important;
-    color: var(--red-text) !important;
+    background: var(--pastel-red-bg) !important;
+    color: var(--pastel-red-text) !important;
     border-radius: 999px !important;
     padding: 6px 16px !important;
     margin-left: 10px;
 }
 header nav a[href*="logout"]::after { display: none; }
-header nav a[href*="logout"]:hover { background: var(--red-text) !important; color: var(--white) !important; }
+header nav a[href*="logout"]:hover { background: var(--pastel-pink) !important; color: var(--white) !important; }
 
-/* Konten utama */
+/* konten utama */
 main {
     flex: 1;
     max-width: 1180px;
@@ -131,25 +130,25 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
 }
 
 .card {
-    background: var(--white);
-    border: 1px solid var(--border);
+    background: var(--tint-blue);
+    border: 1px solid var(--soft-blue);
     border-top: 4px solid var(--primary);
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 20px 24px;
     box-shadow: 0 4px 12px rgba(33, 53, 140, 0.04);
     transition: 0.2s;
 }
-.card:nth-child(2) { border-top-color: var(--amber); }
-.card:nth-child(3) { border-top-color: var(--blue-accent); }
-.card:nth-child(4) { border-top-color: var(--green-accent); }
-.card:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(76, 115, 248, 0.12); }
-.card h3 { margin: 0; font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; }
-.card p { font-size: 2rem; font-weight: 700; margin: 8px 0 0; color: var(--primary); }
-.card:nth-child(2) p { color: var(--amber-dark); }
-.card:nth-child(3) p { color: #2563EB; }
-.card:nth-child(4) p { color: #059669; }
+.card:nth-child(2) { background: #F2EFFE; border-color: #E2DCFD; border-top-color: var(--pastel-purple); }
+.card:nth-child(3) { background: #FDF0F8; border-color: #FAD8EE; border-top-color: var(--pastel-pink); }
+.card:nth-child(4) { background: #FEF8E7; border-color: #FCEBC0; border-top-color: var(--pastel-gold); }
 
-/* Tabel */
+.card:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(76, 115, 248, 0.12); }
+.card h3 { margin: 0; font-size: 0.8rem; color: var(--text-gray); text-transform: uppercase; }
+.card p { font-size: 2rem; font-weight: 700; margin: 8px 0 0; color: var(--primary); }
+.card:nth-child(2) p { color: var(--pastel-purple); }
+.card:nth-child(3) p { color: var(--pastel-pink); }
+.card:nth-child(4) p { color: var(--pastel-gold); }
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -173,7 +172,6 @@ table th:last-child, table td:last-child { white-space: nowrap; }
 table tr:last-child td { border-bottom: none !important; }
 table tr:hover td { background: #F8FAFF; }
 
-/*tombol di tabel*/
 table td a {
     display: inline-block;
     text-decoration: none;
@@ -187,12 +185,12 @@ table td a {
     transition: 0.2s;
 }
 table td a:hover { background: var(--primary); color: var(--white); }
-table td a[href*="hapus"] { background: var(--red-bg); color: var(--red-text); }
-table td a[href*="hapus"]:hover { background: var(--red-text); color: var(--white); }
-table td a[href*="wa.me"], table td a[href*="whatsapp.com"] { background: #DCFCE7 !important; color: #15803D !important; border: 1px solid #BBF7D0; }
-table td a[href*="wa.me"]:hover, table td a[href*="whatsapp.com"]:hover { background: #16A34A !important; color: var(--white) !important; }
+table td a[href*="hapus"] { background: var(--pastel-red-bg); color: var(--pastel-red-text); }
+table td a[href*="hapus"]:hover { background: var(--pastel-pink); color: var(--white); }
+table td a[href*="wa.me"], table td a[href*="whatsapp.com"] { background: #E3F8EE !important; color: #2D8A61 !important; border: 1px solid #C6F0DC; }
+table td a[href*="wa.me"]:hover, table td a[href*="whatsapp.com"]:hover { background: var(--pastel-mint) !important; color: var(--white) !important; }
 
-/* Form & tombol utama */
+/* form & tombolutama */
 form br { display: none; }
 form label { display: block; font-weight: 500; color: var(--text-dark); font-size: 0.9rem; margin: 14px 0 4px; }
 form label:first-of-type { margin-top: 0; }
@@ -233,11 +231,11 @@ form button, form input[type="submit"], form .btn { margin-top: 14px; }
 form[method="GET"] button, form[method="GET"] input[type="submit"] { margin-top: 0; }
 button:hover, input[type="submit"]:hover, .btn:hover { background: var(--primary-hover); }
 
-/* Badge status & Footer */
+/* badge & footer */
 .badge-aman, .badge-peringatan, .badge-terlambat { padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: 0.78rem; display: inline-block; white-space: nowrap; }
-.badge-aman { background: #DCFCE7; color: #166534; }
-.badge-peringatan { background: #FEF3C7; color: #92400E; }
-.badge-terlambat { background: #FEE2E2; color: #991B1B; }
+.badge-aman { background: #E3F8EE; color: #2D8A61; }
+.badge-peringatan { background: #FEF6DF; color: #B47B12; }
+.badge-terlambat { background: var(--pastel-red-bg); color: var(--pastel-red-text); }
 
 footer { background: var(--white); color: var(--text-gray); border-top: 1px solid var(--border); text-align: center; padding: 8px 0; font-size: 0.82rem; margin-top: auto; }
 footer p { margin: 0; }
