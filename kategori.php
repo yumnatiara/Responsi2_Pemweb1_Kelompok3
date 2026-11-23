@@ -33,6 +33,7 @@ $data_kategori = mysqli_query($koneksi, "SELECT * FROM kategori ORDER BY id_kate
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelola Kategori</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logoaja.png">
 </head>
 <body>
     <?php include 'navbar.php'; // Akan dibuat oleh Anggota 3 ?>

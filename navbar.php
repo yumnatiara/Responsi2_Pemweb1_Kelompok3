@@ -4,7 +4,7 @@
     <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; gap: 15px;">
         <!-- Logo Aplikasi -->
         <h1 style="margin: 0; font-size: 1.5rem;">
-            <a href="index.php"><img src="logo.png" alt="Logo AssetTrack" style="height: 50px; width: auto;"></a>
+        <a href="index.php"><img src="logo.png" alt="Logo AssetTrack" style="height: 50px; width: auto;"></a>
         </h1>
         
         <!-- Menu Navigasi -->
