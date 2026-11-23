@@ -10,6 +10,7 @@ Sebuah platform berbasis web untuk mencatat serta memantau sirkulasi barang yang
 5. Yumna Tiara Afif H1D025129 (Katalog Aset & Pencatatan Sirkulasi Pinjaman)
    - linkedIn (https://lnkd.in/p/gxsJ7Kux)
 
+Link Presntasi: https://youtu.be/lh_y9csL7fQ
 ---
 
 ## Latar Belakang
