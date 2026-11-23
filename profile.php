@@ -43,6 +43,7 @@ $profil = mysqli_fetch_assoc($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Saya - AssetTrack</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logoaja.png">
 </head>
 <body>
     <?php include 'navbar.php'; ?>

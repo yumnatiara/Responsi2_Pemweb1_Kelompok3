@@ -52,6 +52,7 @@ $daftar_pinjaman = mysqli_query($koneksi, "SELECT * FROM pinjaman_masuk
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catat Barang yang Saya Pinjam - AssetTrack</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logoaja.png">
 </head>
 <body>
     <?php include 'navbar.php'; ?>
